@@ -1,0 +1,52 @@
+package EjercicioTema4;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int numIf = 0;
+        System.out.println(numIf);
+        if (numIf < 0) {
+            System.out.println("El número es menor que 0");
+        } else if (numIf > 0) {
+            System.out.println("El número es mayor que 0");
+        } else {
+            System.out.println("El número es 0");
+        }
+
+        int numWhile = 0;
+        while (numWhile < 3) {
+            System.out.println("El número ahora es: " + numWhile);
+            numWhile++;
+        }
+
+        do {
+            System.out.println("El número de DoWhile es: " + numWhile);
+            numWhile++;
+        }while (numWhile<0);
+
+        int numfor = 0;
+        for (numfor = 0; numfor <= 3;numfor++){
+            System.out.println("El numero de numFor es: " + numfor);
+        }
+
+        String estacion = "Hola";
+
+        switch(estacion){
+            case "INVIERNO":
+                System.out.println("Es Invierno");
+                break;
+            case "PRIMAVERA":
+                System.out.println("Es Primavera");
+                break;
+            case "VERANO":
+                System.out.println("Es Verano");
+                break;
+            case "OTOÑO":
+                System.out.println("Es Otoño");
+                break;
+            default:
+                System.out.println("No es una estación");
+        }
+
+    }
+}
